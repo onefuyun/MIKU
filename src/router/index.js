@@ -32,7 +32,7 @@ const routes = [
   { path: '/search', component: Search },
   { path: '/detail', component: Detail },
   { path: '/rookie', component: Rookie },
-  { path: '/loadapp', component: LoadApp },
+  { path: '/loadapp', components: resolve => { require(['../pages/loadApp.vue'],resolve)} },
   { path: '/nocancle', components: resolve => { require(["../pages/nocancle.vue"], resolve) }}
   ]
 
